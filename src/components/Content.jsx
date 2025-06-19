@@ -1,5 +1,3 @@
-import PlaceholderImage from '../assets/Placeholder-image.png';
-
 export default function Content({hasNewsData, newsData}) {
     return (
         <div className="content">
