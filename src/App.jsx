@@ -1,7 +1,7 @@
 import MainHeader from "./components/MainHeader";
 import Content from "./components/Content";
 import Button from "./components/Button";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 function App() {
   const [hasNewsData , setHasNewsData] = useState(false);
@@ -22,10 +22,6 @@ function App() {
       setHasNewsData(false);
     }
   }
-
-  useEffect(() => {
-    fetchNews();
-  }, [])
   
   return (
     <>
